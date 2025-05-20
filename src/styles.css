@@ -117,9 +117,10 @@ header button {
     background-color: rgba(239,247,255,0.75);
     border-radius: 10px;
     border: solid 2px darkgreen;
+    outline: none;
 }
 
-#logo {
+.logo {
     background-color: rgba(239,247,255,0.75);
     border-radius: 100%;
     text-align: center;
@@ -132,14 +133,14 @@ header button {
 
 }
 
-#logo img {
+.logo img {
     width: min(60vw, 300px);
     margin-right: auto;
     margin-left: auto;
     margin-top: max(-20vw, -100px);
 }
 
-#logo h1 {
+.logo h1 {
     font-family: "UglyQua", Arial, sans-serif;
     font-size: clamp(1rem, 10vw, 3rem);
     text-align: center;
