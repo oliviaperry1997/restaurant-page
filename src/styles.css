@@ -113,24 +113,35 @@ header {
 header button {
     font-family: "UglyQua", Arial, sans-serif;
     font-size: 1.5rem;
-    margin: 0 20px;
-    background-color: rgba(239,247,255,0.75);
+    margin: 0 15px;
+    background-color: rgb(239,247,255);
     border-radius: 10px;
     border: solid 2px darkgreen;
     outline: none;
 }
 
-.logo {
+header button:hover {
+    background-color: rgb(119,123,127);
+}
+
+.logo, .menu-title {
     background-color: rgba(239,247,255,0.75);
     border-radius: 100%;
     text-align: center;
-    width: min(80vw, 400px);
-    height: min(80vw, 400px);
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
     box-shadow: 0 0 10px 10px rgba(239,247,255,0.75);
+}
 
+.logo {
+    width: min(80vw, 400px);
+    height: min(80vw, 400px);
+}
+
+.menu-title {
+    width: min(80vw, 200px);
+    height: min(80vw, 200px);
 }
 
 .logo img {
@@ -140,18 +151,18 @@ header button {
     margin-top: max(-20vw, -100px);
 }
 
-.logo h1 {
+h1 {
     font-family: "UglyQua", Arial, sans-serif;
     font-size: clamp(1rem, 10vw, 3rem);
     text-align: center;
     padding-top: 50px;
 }
 
-.desc, .hours, .location {
+div:not(#content, .menu-item, .logo, .menu-title) {
     background-color: rgba(239,247,255,0.75);
     box-shadow: 0 0 10px 10px rgba(239,247,255,0.75);
     margin: 50px;
-    width: clamp(200px, 50vw, 700px);
+    width: clamp(300px, 50vw, 700px);
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5rem;
@@ -159,14 +170,32 @@ header button {
     text-align: center;
 }
 
+h2 {
+    font-size: 2rem;
+}
 
-#content h2 {
+h3 {
+    font-size: 1.5rem;
+}
+
+#content h2, #content h3 {
     font-family: "UglyQua", Arial, sans-serif;
 }
 
-.desc .disclaimer {
+.starters h2, .entrees h2, .beverages h2, .cannabis h2 {
+    margin-bottom: 50px;
+}
+
+.desc p:first-of-type {
+    margin-bottom: 20px;
+}
+
+.desc .disclaimer, .price {
     font-size: 1rem;
-    margin-top: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
 }
 
 .location img {
