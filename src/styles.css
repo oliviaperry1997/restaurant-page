@@ -124,7 +124,7 @@ header button:hover {
     background-color: rgb(119,123,127);
 }
 
-.logo, .menu-title {
+.logo, .menu-title, .contact-title {
     background-color: rgba(239,247,255,0.75);
     border-radius: 100%;
     text-align: center;
@@ -139,26 +139,24 @@ header button:hover {
     height: min(80vw, 400px);
 }
 
-.menu-title {
+.menu-title, .contact-title {
     width: min(80vw, 200px);
     height: min(80vw, 200px);
 }
 
 .logo img {
     width: min(60vw, 300px);
-    margin-right: auto;
-    margin-left: auto;
     margin-top: max(-20vw, -100px);
+    margin-bottom: max(-10vw, -50px);
 }
 
 h1 {
     font-family: "UglyQua", Arial, sans-serif;
     font-size: clamp(1rem, 10vw, 3rem);
     text-align: center;
-    padding-top: 50px;
 }
 
-div:not(#content, .menu-item, .logo, .menu-title) {
+div:not(#content, .menu-item, .logo, .menu-title, .contact-title) {
     background-color: rgba(239,247,255,0.75);
     box-shadow: 0 0 10px 10px rgba(239,247,255,0.75);
     margin: 50px;
@@ -170,6 +168,13 @@ div:not(#content, .menu-item, .logo, .menu-title) {
     text-align: center;
 }
 
+div.logo, div.menu-title, div.contact-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 h2 {
     font-size: 2rem;
 }
@@ -178,7 +183,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-#content h2, #content h3 {
+#content h2, #content h3, #content h4 {
     font-family: "UglyQua", Arial, sans-serif;
 }
 
